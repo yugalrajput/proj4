@@ -23,7 +23,7 @@ public class JDBCDataSource {
      *///
 	
 	
-    private static JDBCDataSource datasource;
+    private static final JDBCDataSource datasource;
 
     private JDBCDataSource() {
     }
