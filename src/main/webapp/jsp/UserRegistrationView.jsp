@@ -49,7 +49,7 @@
 			value="<%=DataUtility.getTimestamp(bean.getModifiedDatetime())%>">
 
 		<div align="center">
-			<h1>User Registration</h1>
+			<h1> <font color="blue" ></font> USER REGISTRATION</h1>
 
 			<H3>
 				<font color="green"> <%=ServletUtility.getSuccessMessage(request)%></font>
