@@ -13,12 +13,12 @@
 	<%
     UserBean userBean = (UserBean)session.getAttribute("user");
     boolean userLoggedIn = userBean != null;
-    String welcomeMsg = "Hi, ";
+    String welcomeMsg = "Hello, ";
     if (userLoggedIn) {
         String role = (String)session.getAttribute("role");
         welcomeMsg += userBean.getFirstName() + " (" + role + ")";
     } else {
-        welcomeMsg += "Guest";
+        welcomeMsg += "mate";
     }
 	%>
 
@@ -26,7 +26,7 @@
     <tr ><th></th>
        <td width="90%" >
       
-        <a href="<%=ORSView.WELCOME_CTL%>">Welcome</b></a> |
+        <a  href="<%=ORSView.WELCOME_CTL%>">Welcome to Ncs</b></a> |
       
             	<%
             		if (userLoggedIn) {
@@ -36,14 +36,14 @@
             <%
                 } else {
             %> 
-            <a href="<%=ORSView.LOGIN_CTL%>">Login</b></a> 
+            <a href="<%=ORSView.LOGIN_CTL%>"> Please Login</b></a> 
             <%
   			   }
 			 %>
  		</td>
         <td rowspan="2" >
             <h1 align="right" >
-                <img src= "<%=ORSView.APP_CONTEXT %>/img/customLogo.jpg"  width="175" height="50">
+                <img src= "<%=ORSView.APP_CONTEXT %>/img/customLogo.jpg"  width="325" height="75">
             </h1>
         </td>
     </tr>
