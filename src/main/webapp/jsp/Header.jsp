@@ -26,7 +26,7 @@
     <tr ><th></th>
        <td width="90%" >
       
-        <a  href="<%=ORSView.WELCOME_CTL%>">Welcome to Ncs</b></a> |
+        <a  href="<%=ORSView.WELCOME_CTL%>">Welcome to Ncs one</b></a> |
       
             	<%
             		if (userLoggedIn) {
